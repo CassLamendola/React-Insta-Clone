@@ -4,10 +4,10 @@ const CommentSection = props => {
     return props.comments.map((comment, i) => {
         return (
             <div key={comment.username + i}>
-                <div class="commenter">
+                <div className="commenter">
                     {comment.username}
                 </div>
-                <div class="comment">
+                <div className="comment">
                     {comment.text}
                 </div>
             </div>

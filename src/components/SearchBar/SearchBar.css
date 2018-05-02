@@ -1,0 +1,45 @@
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 10vw;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.logos {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fa-instagram {
+    font-size: 40px;
+    padding: 0px 20px;
+    border-right: 1px solid rgb(221, 221, 221);
+    margin-right: 20px;
+}
+
+.ig-logo {
+    width: 50%;
+}
+
+.search {
+    margin: 15px;
+}
+
+.search input {
+    background-color: rgb(236, 236, 236);
+    border: none;
+    margin-left: 5px;
+}
+
+.fa-search {
+    color: gray;
+}
+
+.top-icons {
+    color: gray;
+}

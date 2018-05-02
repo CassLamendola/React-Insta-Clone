@@ -20,7 +20,7 @@ class App extends Component {
     return (
       <div className="App">
         <SearchBar data={this.state.data}/>
-        <div class="posts">
+        <div className="posts">
           <PostContainer data={this.state.data}/>
         </div>
       </div>

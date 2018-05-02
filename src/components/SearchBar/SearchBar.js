@@ -1,10 +1,22 @@
 import React from 'react';
-import ig_search_bar from '../../assets/ig_search_bar.png';
+import Instagram_logo from '../../assets/Instagram_logo.svg.png';
 
 const SearchBar = props => {
     return (
-        <div>
-           <img src={ig_search_bar} alt="search bar"/>
+        <div className="search-bar">
+            <div className="logos">
+                <i className="fab fa-instagram"></i>
+                <img src={Instagram_logo} className="ig-logo"/>
+            </div>
+            <div className="search">
+                <i className="fas fa-search"></i>
+                <input placeholder="Search"/>
+            </div>
+            <div className="top-icons">
+                <i className="far fa-compass"></i>
+                <i className="far fa-heart"></i>
+                <i className="far fa-user"></i>
+            </div>
         </div>
     );
 };
