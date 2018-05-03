@@ -1,5 +1,7 @@
 import React from 'react';
 import CommentSection from "../CommentSection/CommentSection"
+import { Card, CardImg, CardText, CardBody,
+    CardTitle, CardSubtitle, Button } from 'reactstrap';
 
 const PostContainer = props => {
     return props.data.map((post, i) => {
@@ -28,6 +30,26 @@ const PostContainer = props => {
                     <span>...</span>
                 </div>
             </div>
+            // <div key={i + post.username}>
+            //     <Card>
+            //         <CardTitle>
+            //             <img src={post.thumbnailUrl} alt="user thumbnail" className="user-img"/>
+            //             <h3>{post.username}</h3>
+            //         </CardTitle>
+            //         <CardImg src={post.imageUrl} alt="user's image"/>
+            //         <CardBody>
+            //             <div className="like-icons">
+            //                 <i className="far fa-heart"></i>
+            //                 <i className="far fa-comment"></i>
+            //             </div>
+            //             <CardText>{`${post.likes} likes`}</CardText>
+            //             <CardText><CommentSection comments={post.comments}/></CardText>
+            //             <CardText className="time">{`2 HOURS AGO`}</CardText>
+            //             <input placeholder="Add a comment..." name="comment-box" className="comment-box"/>
+            //             <CardText>...</CardText>
+            //         </CardBody>
+            //     </Card>
+            // </div>
         )
     })
 };
